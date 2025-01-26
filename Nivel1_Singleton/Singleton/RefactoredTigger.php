@@ -30,7 +30,7 @@ class RefactoredTigger{
 
     public function __clone(){}                    //prevent cloning/copying outside class -> clone operator.
     public function __wakeup(){                   //prevent unserializing of an instance   ->global function unserialized()
-        throw new Exception("this singleton cannot be unserialized!");
+        //throw new Exception("this singleton cannot be unserialized!");
     }
 }
 
